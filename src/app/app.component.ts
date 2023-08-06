@@ -37,25 +37,25 @@ export class AppComponent {
   }
 
   equals(): void {    
-      switch (this.operator) {
-        case 'add':
-          this.currentValue = this.previousValue + parseFloat(this.displayValue);
-          this.displayValue = this.currentValue.toString();
-          break;
-        case 'subtract':
-          this.currentValue = this.previousValue - parseFloat(this.displayValue);
-          this.displayValue = this.currentValue.toString();
-          break;
-        case 'multiply':
-          this.currentValue = this.previousValue * parseFloat(this.displayValue);
-          this.displayValue = this.currentValue.toString();
-          break;
-        case 'divide':
-          this.currentValue = this.previousValue / parseFloat(this.displayValue);
-          this.displayValue = this.currentValue.toString();
-          break;
-        default:
-          break;
-      }
+    switch (this.operator) {
+      case 'add':
+        this.currentValue = this.previousValue + parseFloat(this.displayValue);
+        this.displayValue = this.currentValue.toString();
+        break;
+      case 'subtract':
+        this.currentValue = this.previousValue - parseFloat(this.displayValue);
+        this.displayValue = this.currentValue.toString();
+        break;
+      case 'multiply':
+        this.currentValue = this.previousValue * parseFloat(this.displayValue);
+        this.displayValue = this.currentValue.toString();
+        break;
+      case 'divide':
+        this.currentValue = this.previousValue / parseFloat(this.displayValue);
+        this.displayValue = this.currentValue.toString();
+        break;
+      default:
+        break;
+    }
   }
 }

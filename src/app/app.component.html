@@ -2,21 +2,27 @@
   <input type="text" [(ngModel)]="displayValue" disabled>
   <div class="buttons">
     <!-- <button (click)="clear()">C</button> -->
-    <button (click)="select(1)">1</button>
-    <button (click)="select(2)">2</button>
-    <button (click)="select(3)">3</button>
-    <button (click)="select(4)">4</button>
-    <button (click)="select(5)">5</button>
-    <button (click)="select(6)">6</button>
-    <button (click)="select(7)">7</button>
-    <button (click)="select(8)">8</button>
-    <button (click)="select(9)">9</button>
-    <button (click)="select(0)">0</button>
-    <button (click)="divide()">/</button>
-    <button (click)="multiply()">*</button>
-    <button (click)="subtract()">-</button>
-    <button (click)="add()">+</button>
-    <button (click)="equals()">equals</button>
+
+    <button mat-raised-button color="basic"></button>
+    <button mat-raised-button color="basic"></button>
+    <button mat-raised-button color="basic"></button>
+    <button mat-raised-button color="basic" (click)="divide()">/</button>
+    <button mat-raised-button color="basic" (click)="select(7)">7</button>
+    <button mat-raised-button color="basic" (click)="select(8)">8</button>
+    <button mat-raised-button color="basic" (click)="select(9)">9</button>
+    <button mat-raised-button color="basic" (click)="multiply()">*</button>
+    <button mat-raised-button color="basic" (click)="select(4)">4</button>
+    <button mat-raised-button color="basic" (click)="select(5)">5</button>
+    <button mat-raised-button color="basic" (click)="select(6)">6</button>
+    <button mat-raised-button color="basic" (click)="subtract()">-</button>
+    <button mat-raised-button color="basic" (click)="select(1)">1</button>
+    <button mat-raised-button color="basic" (click)="select(2)">2</button>
+    <button mat-raised-button color="basic" (click)="select(3)">3</button>
+    <button mat-raised-button color="basic" (click)="add()">+</button>
+    <button mat-raised-button color="basic"></button>
+    <button mat-raised-button color="basic" (click)="select(0)">0</button>
+    <button mat-raised-button color="basic"></button>
+    <button mat-raised-button color="primary" (click)="equals()">=</button>
     <!-- Resto de los botones numéricos y de operaciones -->
   </div>
 </div>

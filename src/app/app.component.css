@@ -1,0 +1,8 @@
+/* styles.css */
+@import '@angular/material/prebuilt-themes/indigo-pink.css';
+
+.buttons {
+    width: 320px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
